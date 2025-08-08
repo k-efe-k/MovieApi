@@ -14,5 +14,11 @@ namespace MovieApi.Application.Features.CQRSDesignPattern.Results.MovieResults
         public Decimal Rating { get; set; }
         public int Duration { get; set; }
         public bool Status { get; set; }
+        public bool CreatedYear { get; set; }
+
+        public bool Description { get; set; }
+
+        public bool ReleaseDate { get; set; }
+
     }
 }

@@ -1,5 +1,6 @@
 ﻿using MovieApi.Application.Features.CQRSDesignPattern.Commands.CategoryCommands;
 using MovieApi.Domain.Entities;
+using MovieApi.Persistance.Context;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,9 +17,9 @@ namespace MovieApi.Application.Features.CQRSDesignPattern.Handlers.CategoryHandl
         {
             _context = context;
         }
-        public async void Handle(CreateCategoryCommands command) 
+        public async Task Handle(CreateCategoryCommands command) 
         {
-            _context.Categories.add(new Category
+            _context.Categories.Add(new Category
             {
                 CategoryName = command.CategoryName
             });
