@@ -14,8 +14,7 @@ public class RemoveCategoryCommandHandler
     {
         _context = context;
     }
-    public async     Task
-Handle(RemoveCategoryCommands command)
+    public async Task Handle(RemoveCategoryCommand command)
     {
         var value = await _context.Categories.FindAsync(command.CategoryId);
         _context.Categories.Remove(value);

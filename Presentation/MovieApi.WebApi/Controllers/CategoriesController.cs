@@ -60,7 +60,7 @@ namespace MovieApi.WebApi.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteCategory(int id)
         {
-            await _removeCategoryCommandHandler.Handle(new RemoveCategoryCommands(id));
+            await _removeCategoryCommandHandler.Handle(new RemoveCategoryCommand(id));
             return Ok("Category has been deleted successfully");
         }
     }

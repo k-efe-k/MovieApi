@@ -2,7 +2,6 @@
 using MovieApi.Application.Features.CQRSDesignPattern.Commands.MovieCommands;
 using MovieApi.Application.Features.CQRSDesignPattern.Handlers.MovieHandlers;
 using MovieApi.Application.Features.CQRSDesignPattern.Queries.CategoryQueries.MovieQueries;
-using MovieApi.Application.Features.CQRSDesignPattern.Queries.MovieQueries;
 
 namespace MovieApi.WebApi.Controllers
 {

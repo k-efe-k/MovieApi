@@ -24,7 +24,7 @@ Handle(CreateMovieCommands commands)
             {
                 CoverImageUrl = commands.CoverImageUrl,
                 CreatedYear = commands.CreatedYear,
-                Descripton = commands.Description,
+                Description = commands.Description,
                 Duration = commands.Duration,
                 Rating = commands.Rating,
                 ReleaseDate = commands.RelaseDate,
