@@ -27,11 +27,8 @@ namespace MovieApi.Application.Features.CQRSDesignPattern.Handlers.MovieHandlers
             {
                 MovieId = x.MovieId,
                 CoverImageUrl = x.CoverImageUrl,
-                CreatedYear=x.CreatedYear,
-                Description=x.Description,
                 Duration=x.Duration,
                 Rating=x.Rating,
-                ReleaseDate=x.ReleaseDate,
                 Status=x.Status,
                 Title=x.Title,
             }).ToList();

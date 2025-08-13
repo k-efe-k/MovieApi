@@ -23,12 +23,10 @@ namespace MovieApi.Application.Features.CQRSDesignPattern.Handlers.MovieHandlers
             var value = await _context.Movies.FindAsync(query.MovieId);
             return new GetMovieByIdQueryResult
             {
+                MovieId = value.MovieId,
                 CoverImageUrl = value.CoverImageUrl,
-                CreatedYear = value.CreatedYear,
-                Description = value.Description,
                 Duration = value.Duration,
                 Rating = value.Rating,
-                ReleaseDate = value.ReleaseDate,
                 Status = value.Status,
                 Title = value.Title,
             };

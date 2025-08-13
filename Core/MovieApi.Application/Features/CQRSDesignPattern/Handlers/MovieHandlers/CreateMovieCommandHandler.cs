@@ -23,11 +23,8 @@ Handle(CreateMovieCommands commands)
             _context.Movies.Add(new Movie
             {
                 CoverImageUrl = commands.CoverImageUrl,
-                CreatedYear = commands.CreatedYear,
-                Description = commands.Description,
                 Duration = commands.Duration,
                 Rating = commands.Rating,
-                ReleaseDate = commands.RelaseDate,
                 Status = commands.Status,
                 Title = commands.Title
             });
