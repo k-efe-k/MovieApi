@@ -5,7 +5,7 @@ using MovieApi.Application.Features.CQRSDesignPattern.Queries.CategoryQueries;
 
 namespace MovieApi.WebApi.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/[controller]")]//bu bir deneme branchidir
     [ApiController]
     public class CategoriesController : ControllerBase
     {
